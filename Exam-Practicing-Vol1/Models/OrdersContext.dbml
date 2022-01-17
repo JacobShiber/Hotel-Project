@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HotelDB" Class="OrdersContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-76KPC67;Initial Catalog=HotelDB;Integrated Security=True;Pooling=False;MultipleActiveResultSets=True;Application Name=EntityFramework" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="HotelDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.OrdersTable" Member="OrdersTables">
+    <Type Name="OrdersTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CostumerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WorkerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OrderDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Paid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
